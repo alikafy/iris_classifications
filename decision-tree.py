@@ -109,7 +109,7 @@ def decision_tree(data, original_data, features, target_feature="target", parent
         level += 1
         new_features = None  # ---> to here
 
-        for vals in np.unique(data[best_feature]):  # recursion of all diffrent values in that splitting feature
+        for vals in np.unique(data[best_feature]):  # recursion of all different values in that splitting feature
 
             value = vals
             sub_data = (data[data[best_feature] == value]).dropna()
