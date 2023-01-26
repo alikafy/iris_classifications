@@ -55,7 +55,7 @@ def plot_iris_data():
 
 def load_data_pandas():
     column_names = ["sepal_length_in_cm", "sepal_width_in_cm", "petal_length_in_cm", "petal_width_in_cm", "class"]
-    dataset = pd.read_csv("iris.data", header=None, names=column_names)
+    dataset = pd.read_csv("iris.csv", header=None, names=column_names)
 
     print(dataset.head())
     return dataset
